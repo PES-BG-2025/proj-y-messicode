@@ -65,3 +65,4 @@ El presente proyecto tiene como objetivo que el estudiante conozca nuevos paquet
   - No entender el código brindado por los chatbots (uso ciego).
   - No entender la organización del código porque todo fue elaborado por el chatbot.
 
+
