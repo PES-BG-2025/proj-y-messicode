@@ -66,3 +66,31 @@ El presente proyecto tiene como objetivo que el estudiante conozca nuevos paquet
   - No entender la organización del código porque todo fue elaborado por el chatbot.
 
 
+## Descripción del proyecto "Messi Code"
+
+**Justificación**  
+A lo largo de los años, distintos estudios han tratado de predecir y estimar cuántos sobres y cuál sería el costo aproximado para completar un álbum de estampitas. En este proyecto se presentan dos escenarios que buscan aproximarse a la realidad, basándonos en las variables mencionadas.
+
+### Escenario 1
+Un coleccionista quiere llenar su álbum bajo los siguientes supuestos:
+
+- 1 álbum  
+- 670 estampitas  
+- Cada sobre contiene 5 estampitas **sin repetidas dentro del mismo sobre**  
+- Todas las estampitas tienen la misma probabilidad de aparecer (distribución uniforme)  
+- Costo por sobre: Q6.75  
+
+Con estos supuestos, se realiza una simulación de Monte Carlo con n repeticiones (definidas por el usuario).  
+Resultados esperados: número promedio de sobres necesarios para llenar el álbum, costo total promedio y cantidad promedio de estampitas repetidas obtenidas durante el proceso.
+
+### Escenario 2
+Se aproxima una situación más realista con dos coleccionistas que desean llenar el mismo álbum al mismo tiempo y están dispuestos a intercambiar repetidas, bajo los siguientes supuestos:
+
+- Todas las estampitas tienen la misma probabilidad de aparecer (distribución uniforme).  
+- Ambos coleccionistas comienzan al mismo tiempo.  
+- Ambos compran un sobre simultáneamente.  
+- Tras cada compra, actualizan sus álbumes.  
+- Las estampitas duplicadas pasan a la lista de intercambio de cada coleccionista.  
+- El intercambio sucede únicamente si ambos tienen la misma estampita para intercambiar (1×1).
+
+Igual que en el primer escenario, mediante simulación de Monte Carlo se obtiene el número promedio de sobres, el costo promedio y la cantidad promedio de estampitas repetidas.

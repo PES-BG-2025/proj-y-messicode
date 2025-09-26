@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Escenario 1: </title>
+<title>MessiCode, Una simulación de Montecarlo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,18 +85,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#simulación-de-monte-carlo-de-una-persona-sin-intercambio" id="toc-simulación-de-monte-carlo-de-una-persona-sin-intercambio" class="nav-link active" data-scroll-target="#simulación-de-monte-carlo-de-una-persona-sin-intercambio">Simulación de Monte Carlo de una persona sin intercambio</a></li>
+  <li><a href="#escenario-1" id="toc-escenario-1" class="nav-link active" data-scroll-target="#escenario-1"><span style="color:blue">Escenario 1: </span></a>
+  <ul class="collapse">
+  <li><a href="#simulación-de-monte-carlo-de-una-persona-sin-intercambio" id="toc-simulación-de-monte-carlo-de-una-persona-sin-intercambio" class="nav-link" data-scroll-target="#simulación-de-monte-carlo-de-una-persona-sin-intercambio">Simulación de Monte Carlo de una persona sin intercambio</a></li>
+  </ul></li>
   <li><a href="#resultados-sin-intercambio" id="toc-resultados-sin-intercambio" class="nav-link" data-scroll-target="#resultados-sin-intercambio"><span style="color:green">Resultados sin Intercambio </span></a></li>
-  <li><a href="#histograma-de-frecuencia-de-sobres-promedio" id="toc-histograma-de-frecuencia-de-sobres-promedio" class="nav-link" data-scroll-target="#histograma-de-frecuencia-de-sobres-promedio"><span style="color:pink">Histograma de frecuencia de sobres promedio </span></a></li>
-  <li><a href="#histograma-de-frecuencia-de-costo-promedio" id="toc-histograma-de-frecuencia-de-costo-promedio" class="nav-link" data-scroll-target="#histograma-de-frecuencia-de-costo-promedio"><span style="color:pink">Histograma de frecuencia de costo promedio </span></a></li>
-  <li><a href="#escenario-2" id="toc-escenario-2" class="nav-link" data-scroll-target="#escenario-2"><span style="color:yellow">Escenario 2: </span></a>
+  <li><a href="#histograma-de-frecuencia-de-sobres-promedio" id="toc-histograma-de-frecuencia-de-sobres-promedio" class="nav-link" data-scroll-target="#histograma-de-frecuencia-de-sobres-promedio"><span style="color:orange">Histograma de frecuencia de sobres promedio </span></a></li>
+  <li><a href="#histograma-de-frecuencia-de-costo-promedio" id="toc-histograma-de-frecuencia-de-costo-promedio" class="nav-link" data-scroll-target="#histograma-de-frecuencia-de-costo-promedio"><span style="color:orange">Histograma de frecuencia de costo promedio </span></a></li>
+  <li><a href="#escenario-2" id="toc-escenario-2" class="nav-link" data-scroll-target="#escenario-2"><span style="color:blue">Escenario 2: </span></a>
   <ul class="collapse">
   <li><a href="#simulación-de-monte-carlo-de-dos-personas-con-intercambios" id="toc-simulación-de-monte-carlo-de-dos-personas-con-intercambios" class="nav-link" data-scroll-target="#simulación-de-monte-carlo-de-dos-personas-con-intercambios">Simulación de Monte Carlo de dos personas con intercambios</a></li>
   </ul></li>
-  <li><a href="#resultados-con-intercambio" id="toc-resultados-con-intercambio" class="nav-link" data-scroll-target="#resultados-con-intercambio"><span style="color:green">Resultados con Intercambio </span></a>
-  <ul class="collapse">
-  <li><a href="#dataframe" id="toc-dataframe" class="nav-link" data-scroll-target="#dataframe"><span style="color:green">Dataframe </span></a></li>
-  </ul></li>
+  <li><a href="#resultados-con-intercambio" id="toc-resultados-con-intercambio" class="nav-link" data-scroll-target="#resultados-con-intercambio"><span style="color:green">Resultados con Intercambio </span></a></li>
+  <li><a href="#comparación-de-escenarios-con-10000-simulaciones" id="toc-comparación-de-escenarios-con-10000-simulaciones" class="nav-link" data-scroll-target="#comparación-de-escenarios-con-10000-simulaciones"><span style="color:blue"> Comparación de escenarios con 10,000 simulaciones </span></a></li>
   </ul>
 </nav>
 </div>
@@ -104,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span style="color:yellow">Escenario 1: </span></h1>
+<h1 class="title">MessiCode, Una simulación de Montecarlo</h1>
 </div>
 
 
@@ -121,74 +122,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="álbum" class="level5">
+<h5 class="anchored" data-anchor-id="álbum">1. 1 Álbum</h5>
+</section>
+<section id="estampitas-a-coleccionar" class="level5">
+<h5 class="anchored" data-anchor-id="estampitas-a-coleccionar">2. 670 estampitas a coleccionar</h5>
+</section>
+<section id="sobre-contiene-5-estampitas-y-no-pueden-ser-repetidas." class="level5">
+<h5 class="anchored" data-anchor-id="sobre-contiene-5-estampitas-y-no-pueden-ser-repetidas.">3. 1 sobre contiene 5 estampitas y no pueden ser repetidas.</h5>
+</section>
+<section id="la-probabilidad-de-obtener-cualquier-estampa-es-la-misma." class="level5">
+<h5 class="anchored" data-anchor-id="la-probabilidad-de-obtener-cualquier-estampa-es-la-misma.">4. La probabilidad de obtener cualquier estampa es la misma.</h5>
+</section>
+<section id="no-existe-intercambio-de-estampitas" class="level5">
+<h5 class="anchored" data-anchor-id="no-existe-intercambio-de-estampitas">5. No existe intercambio de estampitas</h5>
+</section>
+<section id="precio-por-sobre-q6.75" class="level5">
+<h5 class="anchored" data-anchor-id="precio-por-sobre-q6.75">6. Precio por sobre Q6.75</h5>
+</section>
+<section id="escenario-1" class="level1">
+<h1><span style="color:blue">Escenario 1: </span></h1>
 <section id="simulación-de-monte-carlo-de-una-persona-sin-intercambio" class="level2">
 <h2 class="anchored" data-anchor-id="simulación-de-monte-carlo-de-una-persona-sin-intercambio">Simulación de Monte Carlo de una persona sin intercambio</h2>
-<div id="f60b8575" class="cell" data-execution_count="1">
+<div id="2bd59458" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Algoritmo para un sujeto sin intercambio. </span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Definicion variables</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>numero_simulaciones<span class="op">=</span><span class="dv">10</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Definir listas y otras variables</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Resultados<span class="op">=</span>[]</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Costo_tot_sobres<span class="op">=</span>[]</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>numero_simulaciones<span class="op">=</span><span class="dv">10000</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Definimos listas iniciales para añadir resultados por simulación</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Resultados_sobres<span class="op">=</span>[]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Costo_tot_sobres<span class="op">=</span>[]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Repetidas_tot <span class="op">=</span> []</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Inicia ronda de simulacion 1,2,3,4...etc</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> simulacion <span class="kw">in</span> <span class="bu">range</span>(numero_simulaciones):</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(numero_simulaciones):</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Definimos constantes</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    estampas_totales <span class="op">=</span> <span class="dv">670</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    costo_sobre<span class="op">=</span><span class="fl">6.75</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    costo_libro<span class="op">=</span><span class="dv">15</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    sobres_comprados <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Definimos valores iniciales de variables</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    sobres_comprados <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    album <span class="op">=</span> []</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    estampas_faltantes <span class="op">=</span> estampas_totales <span class="op">-</span> <span class="bu">len</span>(album)</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    lista_repetidas <span class="op">=</span> []</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    intercambiables <span class="op">=</span> <span class="bu">len</span>(lista_repetidas)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> abrir_sobre(estampas_sobre<span class="op">=</span><span class="dv">5</span>):</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Hace referencia a que las asignaciones de estas variables modifican las variables globales existentes (definidas fuera de la funcion)</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Cada vez que se invoque la funcion abrir_sobre se esta modificando las variables globales</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> sobres_comprados,estampas_faltantes,intercambiables</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        sobres_comprados <span class="op">+=</span><span class="dv">1</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        num_estampa<span class="op">=</span> np.random.choice(np.arange(<span class="dv">1</span>, <span class="dv">671</span>), size<span class="op">=</span>estampas_sobre, replace<span class="op">=</span><span class="va">False</span>)   </span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> estampa <span class="kw">in</span> num_estampa:</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> estampa <span class="kw">not</span> <span class="kw">in</span> album:</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                album.append(estampa)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>                lista_repetidas.append(estampa)</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        estampas_faltantes<span class="op">=</span>estampas_totales<span class="op">-</span><span class="bu">len</span>(album)</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        intercambiables <span class="op">=</span> <span class="bu">len</span>(lista_repetidas)</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Definimos funcion de abrir sobre (simula una accion de abrir sobre y pegar una estampa en el album, o añadir a la lista de repetidas)</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> abrir_sobre(estampas_sobre<span class="op">=</span><span class="dv">5</span>):</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Hace referencia a que las asignaciones de estas variables modifican las variables globales existentes (definidas fuera de la funcion)</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Cada vez que se invoque la funcion abrir_sobre se esta modificando las variables globales</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> sobres_comprados,estampas_faltantes</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        sobres_comprados <span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        num_estampa<span class="op">=</span> np.random.choice(np.arange(<span class="dv">1</span>, <span class="dv">671</span>), size<span class="op">=</span>estampas_sobre, replace<span class="op">=</span><span class="va">False</span>)   </span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> estampa <span class="kw">in</span> num_estampa:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> estampa <span class="kw">not</span> <span class="kw">in</span> album:</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>                album.append(estampa)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                lista_repetidas.append(estampa)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        estampas_faltantes<span class="op">=</span>estampas_totales<span class="op">-</span><span class="bu">len</span>(album)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Mientras el coleccionista tenga estampas faltantes, sigue abriendo sobres</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> estampas_faltantes<span class="op">&gt;</span><span class="dv">0</span>:</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        abrir_sobre()</span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> estampas_faltantes<span class="op">&gt;</span><span class="dv">0</span>:</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>        abrir_sobre()</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    Resultados.append(sobres_comprados)</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    Costo_tot_sobres.append(costo_sobre<span class="op">*</span>sobres_comprados)</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Sobres_prom<span class="op">=</span><span class="bu">sum</span>(Resultados[:])<span class="op">/</span>numero_simulaciones</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Costo_prom<span class="op">=</span><span class="bu">sum</span>(Costo_tot_sobres[:])<span class="op">/</span>numero_simulaciones</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Repe_prom<span class="op">=</span><span class="bu">sum</span>(lista_repetidas[:])<span class="op">/</span>numero_simulaciones</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Recopilamos resultados de sobres totales, costo total, y total repetidas de cada simulación</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    Resultados_sobres.append(sobres_comprados)</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    Costo_tot_sobres.append(costo_sobre<span class="op">*</span>sobres_comprados)</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    Repetidas_tot.append(<span class="bu">len</span>(lista_repetidas))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">#Determinamos resultados finales promedios con todas las simulaciones</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>Sobres_prom<span class="op">=</span><span class="bu">sum</span>(Resultados_sobres)<span class="op">/</span>numero_simulaciones</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Costo_prom<span class="op">=</span><span class="bu">sum</span>(Costo_tot_sobres)<span class="op">/</span>numero_simulaciones</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Repe_prom<span class="op">=</span> <span class="bu">sum</span>(Repetidas_tot)<span class="op">/</span>numero_simulaciones</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
+</section>
 <section id="resultados-sin-intercambio" class="level1">
 <h1><span style="color:green">Resultados sin Intercambio </span></h1>
-<div id="ccab7b34" class="cell" data-execution_count="2">
+<section id="dataframe-sin-intercambio" class="level4">
+<h4 class="anchored" data-anchor-id="dataframe-sin-intercambio"><span style="color:green">Dataframe sin intercambio </span></h4>
+<div id="cb64d414" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Resultados=pd.Series(["-"])</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Dataframe de resultados</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sobres_prom_series <span class="op">=</span> pd.Series([Sobres_prom])</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Costo_prom_series <span class="op">=</span> pd.Series([Costo_prom])</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Repe_prom_series<span class="op">=</span>pd.Series([Repe_prom])</span>
@@ -196,223 +218,239 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>df</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">"index"</span>).<span class="bu">format</span>(<span class="st">"</span><span class="sc">{:,.0f}</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="22">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <style type="text/css">
 </style>
 
-<table id="T_a6bfd" class="caption-top table table-sm table-striped small">
+<table id="T_3bb83" class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th id="T_a6bfd_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Promedio sobres</th>
-<th id="T_a6bfd_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Costo promedio (Q)</th>
-<th id="T_a6bfd_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Promedio repetidas</th>
+<th id="T_3bb83_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Promedio sobres</th>
+<th id="T_3bb83_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Costo promedio (Q)</th>
+<th id="T_3bb83_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Promedio repetidas</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_a6bfd_row0_col0" class="data row0 col0">916</td>
-<td id="T_a6bfd_row0_col1" class="data row0 col1">6,184</td>
-<td id="T_a6bfd_row0_col2" class="data row0 col2">205,218</td>
+<td id="T_3bb83_row0_col0" class="data row0 col0">946</td>
+<td id="T_3bb83_row0_col1" class="data row0 col1">6,388</td>
+<td id="T_3bb83_row0_col2" class="data row0 col2">4,062</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div id="3503d4e8" class="cell" data-execution_count="3">
+<div id="64eb25b7" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>serie_sobres_simulaciones<span class="op">=</span>pd.Series(Resultados)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>serie_costo_simulaciones<span class="op">=</span>pd.Series(Costo_tot_sobres)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones<span class="op">=</span>pd.DataFrame({<span class="st">"Promedio sobres"</span>:serie_sobres_simulaciones,<span class="st">"Costo sobres"</span>:serie_costo_simulaciones})</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#data_frame_simulaciones</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Dataframe de datos por simulación</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>serie_sobres_simulaciones<span class="op">=</span>pd.Series(Resultados_sobres)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>serie_costo_simulaciones<span class="op">=</span>pd.Series(Costo_tot_sobres)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones<span class="op">=</span>pd.DataFrame({<span class="st">"Promedio sobres"</span>:serie_sobres_simulaciones,<span class="st">"Costo sobres"</span>:serie_costo_simulaciones})</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#data_frame_simulaciones</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
+</section>
 <section id="histograma-de-frecuencia-de-sobres-promedio" class="level1">
-<h1><span style="color:pink">Histograma de frecuencia de sobres promedio </span></h1>
-<div id="7ef8f4ba" class="cell" data-execution_count="4">
+<h1><span style="color:orange">Histograma de frecuencia de sobres promedio </span></h1>
+<div id="a045ab8f" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>grafico1<span class="op">=</span>data_frame_simulaciones[<span class="st">"Promedio sobres"</span>].hist()</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>grafico1.set_title(<span class="st">"Grafico 1: Simulación Montecarlo de 1 persona (sin intercambio)"</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>grafico1.set_xlabel(<span class="st">"Promedio de sobres"</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>grafico1.set_ylabel(<span class="st">"Frecuencia"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Promedio sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Histograma de sobres promedio</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>grafico1<span class="op">=</span>data_frame_simulaciones[<span class="st">"Promedio sobres"</span>].hist()</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>grafico1.set_title(<span class="st">"Grafico 1: Simulación Montecarlo de 1 persona (sin intercambio)"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>grafico1.set_xlabel(<span class="st">"Promedio de sobres"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>grafico1.set_ylabel(<span class="st">"Frecuencia"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Promedio sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="24">
-<pre><code>np.float64(916.1)</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>np.float64(946.3739)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulacion_album_files/figure-html/cell-5-output-2.png" width="589" height="450" class="figure-img"></p>
+<p><img src="simulacion_album_files/figure-html/cell-5-output-2.png" width="602" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="histograma-de-frecuencia-de-costo-promedio" class="level1">
-<h1><span style="color:pink">Histograma de frecuencia de costo promedio </span></h1>
-<div id="9278a581" class="cell" data-execution_count="5">
+<h1><span style="color:orange">Histograma de frecuencia de costo promedio </span></h1>
+<div id="09e10a59" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>grafico2<span class="op">=</span>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].hist()</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>grafico2.set_title(<span class="st">"Grafico 1: Simulación Montecarlo de 1 persona (sin intercambio)"</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>grafico2.set_xlabel(<span class="st">"Costo promedio (Q)"</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>grafico2.set_ylabel(<span class="st">"Frecuencia"</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Histograma de costo promedio</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>grafico2<span class="op">=</span>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].hist()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>grafico2.set_title(<span class="st">"Grafico 2: Simulación Montecarlo de 1 persona (sin intercambio)"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>grafico2.set_xlabel(<span class="st">"Costo promedio (Q)"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>grafico2.set_ylabel(<span class="st">"Frecuencia"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="25">
-<pre><code>np.float64(6183.675)</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>np.float64(6388.023825)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulacion_album_files/figure-html/cell-6-output-2.png" width="589" height="450" class="figure-img"></p>
+<p><img src="simulacion_album_files/figure-html/cell-6-output-2.png" width="602" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 </section>
 <section id="escenario-2" class="level1">
-<h1><span style="color:yellow">Escenario 2: </span></h1>
+<h1><span style="color:blue">Escenario 2: </span></h1>
 <section id="simulación-de-monte-carlo-de-dos-personas-con-intercambios" class="level2">
 <h2 class="anchored" data-anchor-id="simulación-de-monte-carlo-de-dos-personas-con-intercambios">Simulación de Monte Carlo de dos personas con intercambios</h2>
-<div id="9405c650" class="cell" data-execution_count="6">
+<div id="37f589c8" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd </span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Simulación de Monte Carlo </span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>numero_simulaciones<span class="op">=</span><span class="dv">10</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>Resultados_intercambio <span class="op">=</span> []</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>Costo_tot_intercambio <span class="op">=</span> []</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>Repetidas_tot_intercambio <span class="op">=</span> []</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> simulacion <span class="kw">in</span> <span class="bu">range</span>(numero_simulaciones):</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Variables generales</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    estampas_totales <span class="op">=</span> <span class="dv">670</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    estampas_sobre<span class="op">=</span><span class="dv">5</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    costo_sobre<span class="op">=</span><span class="fl">6.75</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    costo_libro<span class="op">=</span><span class="dv">15</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    album_1 <span class="op">=</span> []</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    album_2 <span class="op">=</span> []</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    faltantes1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,estampas_totales<span class="op">+</span><span class="dv">1</span>))</span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    faltantes2 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,estampas_totales<span class="op">+</span><span class="dv">1</span>))</span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    lista_repetidas_1 <span class="op">=</span> []</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    lista_repetidas_2 <span class="op">=</span> []</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>numero_simulaciones<span class="op">=</span><span class="dv">10000</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Definimos listas iniciales para añadir resultados por simulación</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>Resultados_intercambio <span class="op">=</span> []</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>Costo_tot_intercambio <span class="op">=</span> []</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>Repetidas_tot_intercambio <span class="op">=</span> []</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Para cada una de las simulaciones realizamos lo siguiente:</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> simulacion <span class="kw">in</span> <span class="bu">range</span>(numero_simulaciones):</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Variables constantes</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    estampas_totales <span class="op">=</span> <span class="dv">670</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    estampas_sobre<span class="op">=</span><span class="dv">5</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    costo_sobre<span class="op">=</span><span class="fl">6.75</span>    </span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Listas de albumes vacias de coleccionistas 1 y 2</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    album_1 <span class="op">=</span> []</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    album_2 <span class="op">=</span> []</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Listas de estampas faltantes de coleccionistas 1 y 2</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    faltantes1 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,estampas_totales<span class="op">+</span><span class="dv">1</span>))</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    faltantes2 <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,estampas_totales<span class="op">+</span><span class="dv">1</span>))</span>
 <span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    sobres_comprados_1 <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    sobres_comprados_2 <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Listas de estampas repetidas de coleccionistas 1 y 2</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>    lista_repetidas_1 <span class="op">=</span> []</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    lista_repetidas_2 <span class="op">=</span> []</span>
 <span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> abrir_sobre_1():    </span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> album_1, faltantes1, lista_repetidas_1, sobres_comprados_1</span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        sobres_comprados_1 <span class="op">+=</span><span class="dv">1</span></span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>        num_estampa_1<span class="op">=</span> np.random.choice(np.arange(<span class="dv">1</span>, <span class="dv">671</span>), size<span class="op">=</span>estampas_sobre, replace<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> estampa <span class="kw">in</span> num_estampa_1:</span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> estampa <span class="kw">in</span> faltantes1:</span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>                album_1.append(estampa)</span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>                faltantes1.remove(estampa)</span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_1.append(estampa)   </span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> abrir_sobre_2():    </span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> album_2, faltantes2, lista_repetidas_2, sobres_comprados_2</span>
-<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>        sobres_comprados_2 <span class="op">+=</span><span class="dv">1</span></span>
-<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>        num_estampa_2<span class="op">=</span> np.random.choice(np.arange(<span class="dv">1</span>, <span class="dv">671</span>), size<span class="op">=</span>estampas_sobre, replace<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> estampa <span class="kw">in</span> num_estampa_2:</span>
-<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> estampa <span class="kw">in</span> faltantes2:</span>
-<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>                album_2.append(estampa)</span>
-<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>                faltantes2.remove(estampa)</span>
-<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
-<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_2.append(estampa)   </span>
-<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> intercambio():</span>
-<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> album_1,album_2,lista_repetidas_1,lista_repetidas_2,faltantes1,faltantes2</span>
-<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Determinamos un set (conjunto) de estampas repetidas UNICAS por coleccionista</span></span>
-<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>        repetidas_unicas_1<span class="op">=</span><span class="bu">set</span>(lista_repetidas_1)</span>
-<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>        repetidas_unicas_2<span class="op">=</span><span class="bu">set</span>(lista_repetidas_2)</span>
-<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Determinamos las estampas disponibles de intercambio por cada uno de los coleccionistas</span></span>
-<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Revisando que las repetidas unicas de un coleccionista coincidan exactamente con las faltantes del otro coleccionista</span></span>
-<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>        disponibles_intercambio_1<span class="op">=</span>repetidas_unicas_1.intersection(<span class="bu">set</span>(faltantes2))</span>
-<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>        disponibles_intercambio_2<span class="op">=</span>repetidas_unicas_2.intersection(<span class="bu">set</span>(faltantes1))</span>
-<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Verificar que el número de intercambios sea el mismo para que sea de 1 x 1.</span></span>
-<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(disponibles_intercambio_1) <span class="op">==</span> <span class="bu">len</span>(disponibles_intercambio_2) <span class="kw">and</span> <span class="bu">len</span>(disponibles_intercambio_1)<span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>            <span class="co">#Pasos para el intercambio entre 1 y 2</span></span>
-<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>            <span class="co">#1. Transferencia de colecionista 1 a 2 </span></span>
-<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> estampa <span class="kw">in</span> disponibles_intercambio_1:</span>
-<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a>                album_2.append(estampa)</span>
-<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>            <span class="co">#2. Eliminación de estampa de la lista de faltantes de 2</span></span>
-<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a>                faltantes2.remove(estampa)</span>
-<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a>            <span class="co">#3. Eliminación de estampa de la lista de repetidas de 1</span></span>
-<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_1.remove(estampa)</span>
-<span id="cb8-76"><a href="#cb8-76" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb8-77"><a href="#cb8-77" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a>            <span class="co">#1. Transferencia de colecionista 2 a 1 </span></span>
-<span id="cb8-79"><a href="#cb8-79" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> estampa <span class="kw">in</span> disponibles_intercambio_2:</span>
-<span id="cb8-80"><a href="#cb8-80" aria-hidden="true" tabindex="-1"></a>                album_1.append(estampa)</span>
-<span id="cb8-81"><a href="#cb8-81" aria-hidden="true" tabindex="-1"></a>            <span class="co">#2. Eliminación de estampa de la lista de faltantes de 1</span></span>
-<span id="cb8-82"><a href="#cb8-82" aria-hidden="true" tabindex="-1"></a>                faltantes1.remove(estampa)</span>
-<span id="cb8-83"><a href="#cb8-83" aria-hidden="true" tabindex="-1"></a>            <span class="co">#3. Eliminación de estampa de la lista de repetidas de 2</span></span>
-<span id="cb8-84"><a href="#cb8-84" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_2.remove(estampa)</span>
-<span id="cb8-85"><a href="#cb8-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-86"><a href="#cb8-86" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">True</span></span>
-<span id="cb8-87"><a href="#cb8-87" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb8-88"><a href="#cb8-88" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb8-89"><a href="#cb8-89" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">False</span>  </span>
-<span id="cb8-90"><a href="#cb8-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-91"><a href="#cb8-91" aria-hidden="true" tabindex="-1"></a>    ronda<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb8-92"><a href="#cb8-92" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="bu">len</span>(faltantes1)<span class="op">&gt;</span><span class="dv">0</span> <span class="kw">or</span> <span class="bu">len</span>(faltantes2)<span class="op">&gt;</span><span class="dv">0</span>:</span>
-<span id="cb8-93"><a href="#cb8-93" aria-hidden="true" tabindex="-1"></a>        ronda <span class="op">+=</span><span class="dv">1</span></span>
-<span id="cb8-94"><a href="#cb8-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-95"><a href="#cb8-95" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(faltantes1)<span class="op">&gt;</span><span class="dv">0</span>:</span>
-<span id="cb8-96"><a href="#cb8-96" aria-hidden="true" tabindex="-1"></a>            abrir_sobre_1()</span>
-<span id="cb8-97"><a href="#cb8-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-98"><a href="#cb8-98" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(faltantes2)<span class="op">&gt;</span><span class="dv">0</span>:</span>
-<span id="cb8-99"><a href="#cb8-99" aria-hidden="true" tabindex="-1"></a>            abrir_sobre_2()</span>
-<span id="cb8-100"><a href="#cb8-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-101"><a href="#cb8-101" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(faltantes1)<span class="op">&gt;</span><span class="dv">0</span> <span class="kw">and</span> <span class="bu">len</span>(faltantes2)<span class="op">&gt;</span><span class="dv">0</span>:</span>
-<span id="cb8-102"><a href="#cb8-102" aria-hidden="true" tabindex="-1"></a>            intercambio()</span>
-<span id="cb8-103"><a href="#cb8-103" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-104"><a href="#cb8-104" aria-hidden="true" tabindex="-1"></a>    Sobres_comprados_tot <span class="op">=</span> sobres_comprados_1 <span class="op">+</span> sobres_comprados_2</span>
-<span id="cb8-105"><a href="#cb8-105" aria-hidden="true" tabindex="-1"></a>    Sobres_promedio_sim <span class="op">=</span> Sobres_comprados_tot<span class="op">/</span><span class="dv">2</span></span>
-<span id="cb8-106"><a href="#cb8-106" aria-hidden="true" tabindex="-1"></a>    Resultados_intercambio.append(Sobres_promedio_sim)</span>
-<span id="cb8-107"><a href="#cb8-107" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-108"><a href="#cb8-108" aria-hidden="true" tabindex="-1"></a>    Costo_prom_sim <span class="op">=</span> Sobres_promedio_sim<span class="op">*</span>costo_sobre</span>
-<span id="cb8-109"><a href="#cb8-109" aria-hidden="true" tabindex="-1"></a>    Costo_tot_intercambio.append(Costo_prom_sim)</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Contador de sobres comprados por cada coleccionista (no seran iguales al final de la simulacion)</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>    sobres_comprados_1 <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>    sobres_comprados_2 <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Definimos funcion abrir sobre para Coleccionista 1 </span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ejecuta una accion de comprar sobre, abrirlo, llenar album, remover estampa de faltantes, o añadirla a repetidas de Coleccionista 1</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> abrir_sobre_1():    </span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> album_1, faltantes1, lista_repetidas_1, sobres_comprados_1</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>        sobres_comprados_1 <span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>        num_estampa_1<span class="op">=</span> np.random.choice(np.arange(<span class="dv">1</span>, <span class="dv">671</span>), size<span class="op">=</span>estampas_sobre, replace<span class="op">=</span><span class="va">False</span>) <span class="co">#Distribucion aleatoria, sin repetición de estampas</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> estampa <span class="kw">in</span> num_estampa_1:</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> estampa <span class="kw">in</span> faltantes1:</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>                album_1.append(estampa)</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>                faltantes1.remove(estampa)</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_1.append(estampa)   </span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Definimos funcion abrir sobre para Coleccionista 2 </span></span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ejecuta una accion de comprar sobre, abrirlo, llenar album, remover estampa de faltantes, o añadirla a repetidas de Coleccionista 2</span></span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> abrir_sobre_2():    </span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> album_2, faltantes2, lista_repetidas_2, sobres_comprados_2</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>        sobres_comprados_2 <span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>        num_estampa_2<span class="op">=</span> np.random.choice(np.arange(<span class="dv">1</span>, <span class="dv">671</span>), size<span class="op">=</span>estampas_sobre, replace<span class="op">=</span><span class="va">False</span>) <span class="co">#Distribucion aleatoria, sin repetición de estampas</span></span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> estampa <span class="kw">in</span> num_estampa_2:</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> estampa <span class="kw">in</span> faltantes2:</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>                album_2.append(estampa)</span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>                faltantes2.remove(estampa)</span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_2.append(estampa)   </span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> intercambio():</span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>        <span class="kw">global</span> album_1,album_2,lista_repetidas_1,lista_repetidas_2,faltantes1,faltantes2</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Determinamos un set (conjunto) de estampas repetidas UNICAS por coleccionista</span></span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>        repetidas_unicas_1<span class="op">=</span><span class="bu">set</span>(lista_repetidas_1)</span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>        repetidas_unicas_2<span class="op">=</span><span class="bu">set</span>(lista_repetidas_2)</span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Determinamos las estampas disponibles de intercambio por cada uno de los coleccionistas</span></span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Revisando que las repetidas unicas de un coleccionista coincidan exactamente con las faltantes del otro coleccionista</span></span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>        disponibles_intercambio_1<span class="op">=</span>repetidas_unicas_1.intersection(<span class="bu">set</span>(faltantes2))</span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a>        disponibles_intercambio_2<span class="op">=</span>repetidas_unicas_2.intersection(<span class="bu">set</span>(faltantes1))</span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Verificar que el número de intercambios sea el mismo para que sea de 1 x 1.</span></span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(disponibles_intercambio_1) <span class="op">==</span> <span class="bu">len</span>(disponibles_intercambio_2) <span class="kw">and</span> <span class="bu">len</span>(disponibles_intercambio_1)<span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-76"><a href="#cb8-76" aria-hidden="true" tabindex="-1"></a>            <span class="co">#Pasos para el intercambio entre 1 y 2</span></span>
+<span id="cb8-77"><a href="#cb8-77" aria-hidden="true" tabindex="-1"></a>            <span class="co">#1. Transferencia de colecionista 1 a 2 </span></span>
+<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> estampa <span class="kw">in</span> disponibles_intercambio_1:</span>
+<span id="cb8-79"><a href="#cb8-79" aria-hidden="true" tabindex="-1"></a>                album_2.append(estampa)</span>
+<span id="cb8-80"><a href="#cb8-80" aria-hidden="true" tabindex="-1"></a>            <span class="co">#2. Eliminación de estampa de la lista de faltantes de 2</span></span>
+<span id="cb8-81"><a href="#cb8-81" aria-hidden="true" tabindex="-1"></a>                faltantes2.remove(estampa)</span>
+<span id="cb8-82"><a href="#cb8-82" aria-hidden="true" tabindex="-1"></a>            <span class="co">#3. Eliminación de estampa de la lista de repetidas de 1</span></span>
+<span id="cb8-83"><a href="#cb8-83" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_1.remove(estampa)</span>
+<span id="cb8-84"><a href="#cb8-84" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb8-85"><a href="#cb8-85" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb8-86"><a href="#cb8-86" aria-hidden="true" tabindex="-1"></a>            <span class="co">#1. Transferencia de colecionista 2 a 1 </span></span>
+<span id="cb8-87"><a href="#cb8-87" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> estampa <span class="kw">in</span> disponibles_intercambio_2:</span>
+<span id="cb8-88"><a href="#cb8-88" aria-hidden="true" tabindex="-1"></a>                album_1.append(estampa)</span>
+<span id="cb8-89"><a href="#cb8-89" aria-hidden="true" tabindex="-1"></a>            <span class="co">#2. Eliminación de estampa de la lista de faltantes de 1</span></span>
+<span id="cb8-90"><a href="#cb8-90" aria-hidden="true" tabindex="-1"></a>                faltantes1.remove(estampa)</span>
+<span id="cb8-91"><a href="#cb8-91" aria-hidden="true" tabindex="-1"></a>            <span class="co">#3. Eliminación de estampa de la lista de repetidas de 2</span></span>
+<span id="cb8-92"><a href="#cb8-92" aria-hidden="true" tabindex="-1"></a>                lista_repetidas_2.remove(estampa)</span>
+<span id="cb8-93"><a href="#cb8-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-94"><a href="#cb8-94" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb8-95"><a href="#cb8-95" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb8-96"><a href="#cb8-96" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb8-97"><a href="#cb8-97" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">False</span>  </span>
+<span id="cb8-98"><a href="#cb8-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-99"><a href="#cb8-99" aria-hidden="true" tabindex="-1"></a>    <span class="co">#Iniciamos un contador de rondas necesarias para que ambos Coleccionistas completen su album cada uno</span></span>
+<span id="cb8-100"><a href="#cb8-100" aria-hidden="true" tabindex="-1"></a>    ronda<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb8-101"><a href="#cb8-101" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="bu">len</span>(faltantes1)<span class="op">&gt;</span><span class="dv">0</span> <span class="kw">or</span> <span class="bu">len</span>(faltantes2)<span class="op">&gt;</span><span class="dv">0</span>: <span class="co">#Mientras alguno de ellos tenga estampas faltantes, continúan las rondas (abren sobres o intercambian)</span></span>
+<span id="cb8-102"><a href="#cb8-102" aria-hidden="true" tabindex="-1"></a>        ronda <span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb8-103"><a href="#cb8-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-104"><a href="#cb8-104" aria-hidden="true" tabindex="-1"></a>        <span class="co">#Al mismo tiempo, Coleccionista 1 y Coleccionista 2 abren 1 sobre a la vez. (A menos que uno de ellos lo complete antes)</span></span>
+<span id="cb8-105"><a href="#cb8-105" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(faltantes1)<span class="op">&gt;</span><span class="dv">0</span>: <span class="co">#Si Coleccionista 1 tiene estampas faltantes, abre sobre</span></span>
+<span id="cb8-106"><a href="#cb8-106" aria-hidden="true" tabindex="-1"></a>            abrir_sobre_1()</span>
+<span id="cb8-107"><a href="#cb8-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-108"><a href="#cb8-108" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(faltantes2)<span class="op">&gt;</span><span class="dv">0</span>: <span class="co">#Si Coleccionista 2 tiene estampas faltantes, abre sobre</span></span>
+<span id="cb8-109"><a href="#cb8-109" aria-hidden="true" tabindex="-1"></a>            abrir_sobre_2()</span>
 <span id="cb8-110"><a href="#cb8-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-111"><a href="#cb8-111" aria-hidden="true" tabindex="-1"></a>    Repetidas_totale_sim <span class="op">=</span> <span class="bu">len</span>(lista_repetidas_1)<span class="op">+</span><span class="bu">len</span>(lista_repetidas_2)</span>
-<span id="cb8-112"><a href="#cb8-112" aria-hidden="true" tabindex="-1"></a>    Repetidas_prom_sim <span class="op">=</span> Repetidas_totale_sim<span class="op">/</span><span class="dv">2</span></span>
-<span id="cb8-113"><a href="#cb8-113" aria-hidden="true" tabindex="-1"></a>    Repetidas_tot_intercambio.append(Repetidas_prom_sim)</span>
-<span id="cb8-114"><a href="#cb8-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-115"><a href="#cb8-115" aria-hidden="true" tabindex="-1"></a>Sobres_promedio_result <span class="op">=</span> <span class="bu">sum</span>(Resultados_intercambio)<span class="op">/</span>numero_simulaciones</span>
-<span id="cb8-116"><a href="#cb8-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-117"><a href="#cb8-117" aria-hidden="true" tabindex="-1"></a>Costo_promedio_result <span class="op">=</span> <span class="bu">sum</span>(Costo_tot_intercambio)<span class="op">/</span>numero_simulaciones</span>
-<span id="cb8-118"><a href="#cb8-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-119"><a href="#cb8-119" aria-hidden="true" tabindex="-1"></a>Repetidas_promedio_result <span class="op">=</span> <span class="bu">sum</span>(Repetidas_tot_intercambio)<span class="op">/</span>numero_simulaciones</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-111"><a href="#cb8-111" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">len</span>(faltantes1)<span class="op">&gt;</span><span class="dv">0</span> <span class="kw">and</span> <span class="bu">len</span>(faltantes2)<span class="op">&gt;</span><span class="dv">0</span>: <span class="co">#Si al abrir cada uno un sobre, tienen faltantes, se procede a verificar si sucede intercambio o no</span></span>
+<span id="cb8-112"><a href="#cb8-112" aria-hidden="true" tabindex="-1"></a>            intercambio()</span>
+<span id="cb8-113"><a href="#cb8-113" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-114"><a href="#cb8-114" aria-hidden="true" tabindex="-1"></a>    <span class="co">#En cada simulación, calculamos el total de sobres requeridos para que cada uno de los 2 coleccionistas llene su album como un promedio</span></span>
+<span id="cb8-115"><a href="#cb8-115" aria-hidden="true" tabindex="-1"></a>    Sobres_comprados_tot <span class="op">=</span> sobres_comprados_1 <span class="op">+</span> sobres_comprados_2</span>
+<span id="cb8-116"><a href="#cb8-116" aria-hidden="true" tabindex="-1"></a>    Sobres_promedio_sim <span class="op">=</span> Sobres_comprados_tot<span class="op">/</span><span class="dv">2</span></span>
+<span id="cb8-117"><a href="#cb8-117" aria-hidden="true" tabindex="-1"></a>    Resultados_intercambio.append(Sobres_promedio_sim)</span>
+<span id="cb8-118"><a href="#cb8-118" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-119"><a href="#cb8-119" aria-hidden="true" tabindex="-1"></a>    <span class="co">#En cada simulación, se calcula el costo promedio como el costo por sobre y el total de sobres promedio entre los 2 coleccionistas</span></span>
+<span id="cb8-120"><a href="#cb8-120" aria-hidden="true" tabindex="-1"></a>    Costo_prom_sim <span class="op">=</span> Sobres_promedio_sim<span class="op">*</span>costo_sobre</span>
+<span id="cb8-121"><a href="#cb8-121" aria-hidden="true" tabindex="-1"></a>    Costo_tot_intercambio.append(Costo_prom_sim)</span>
+<span id="cb8-122"><a href="#cb8-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-123"><a href="#cb8-123" aria-hidden="true" tabindex="-1"></a>    <span class="co">#En cada simuación, el promedio de repetidas también es una media aritmetica de las repetidas de cada coleccionista</span></span>
+<span id="cb8-124"><a href="#cb8-124" aria-hidden="true" tabindex="-1"></a>    Repetidas_totale_sim <span class="op">=</span> <span class="bu">len</span>(lista_repetidas_1)<span class="op">+</span><span class="bu">len</span>(lista_repetidas_2)</span>
+<span id="cb8-125"><a href="#cb8-125" aria-hidden="true" tabindex="-1"></a>    Repetidas_prom_sim <span class="op">=</span> Repetidas_totale_sim<span class="op">/</span><span class="dv">2</span></span>
+<span id="cb8-126"><a href="#cb8-126" aria-hidden="true" tabindex="-1"></a>    Repetidas_tot_intercambio.append(Repetidas_prom_sim)</span>
+<span id="cb8-127"><a href="#cb8-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-128"><a href="#cb8-128" aria-hidden="true" tabindex="-1"></a><span class="co">#Determinamos el promedio de sobres, costo promedio y promedio de repetidas de todas las simulaciones</span></span>
+<span id="cb8-129"><a href="#cb8-129" aria-hidden="true" tabindex="-1"></a>Sobres_promedio_result <span class="op">=</span> <span class="bu">sum</span>(Resultados_intercambio)<span class="op">/</span>numero_simulaciones</span>
+<span id="cb8-130"><a href="#cb8-130" aria-hidden="true" tabindex="-1"></a>Costo_promedio_result <span class="op">=</span> <span class="bu">sum</span>(Costo_tot_intercambio)<span class="op">/</span>numero_simulaciones</span>
+<span id="cb8-131"><a href="#cb8-131" aria-hidden="true" tabindex="-1"></a>Repetidas_promedio_result <span class="op">=</span> <span class="bu">sum</span>(Repetidas_tot_intercambio)<span class="op">/</span>numero_simulaciones</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
 </section>
 <section id="resultados-con-intercambio" class="level1">
 <h1><span style="color:green">Resultados con Intercambio </span></h1>
-<section id="dataframe" class="level2">
-<h2 class="anchored" data-anchor-id="dataframe"><span style="color:green">Dataframe </span></h2>
-<div id="409c0707" class="cell" data-execution_count="7">
+<section id="dataframe-con-intercambio" class="level4">
+<h4 class="anchored" data-anchor-id="dataframe-con-intercambio"><span style="color:green">Dataframe con Intercambio </span></h4>
+<div id="0f50e6f2" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Dataframe de resultados</span></span>
@@ -423,29 +461,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>df.style.hide(axis<span class="op">=</span><span class="st">"index"</span>).<span class="bu">format</span>(<span class="st">"</span><span class="sc">{:,.0f}</span><span class="st">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="27">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <style type="text/css">
 </style>
 
-<table id="T_3dd46" class="caption-top table table-sm table-striped small">
+<table id="T_f691b" class="caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
-<th id="T_3dd46_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Promedio sobres</th>
-<th id="T_3dd46_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Costo promedio (Q)</th>
-<th id="T_3dd46_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Promedio repetidas</th>
+<th id="T_f691b_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Promedio sobres</th>
+<th id="T_f691b_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Costo promedio (Q)</th>
+<th id="T_f691b_level0_col2" class="col_heading level0 col2" data-quarto-table-cell-role="th">Promedio repetidas</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td id="T_3dd46_row0_col0" class="data row0 col0">712</td>
-<td id="T_3dd46_row0_col1" class="data row0 col1">4,809</td>
-<td id="T_3dd46_row0_col2" class="data row0 col2">2,892</td>
+<td id="T_f691b_row0_col0" class="data row0 col0">672</td>
+<td id="T_f691b_row0_col1" class="data row0 col1">4,535</td>
+<td id="T_f691b_row0_col2" class="data row0 col2">2,689</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div id="e65f6ae2" class="cell" data-execution_count="8">
+<div id="8bc223a7" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Dataframe de datos por simulación</span></span>
@@ -455,7 +493,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">#data_frame_simulaciones</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div id="19f9c27a" class="cell" data-execution_count="9">
+<div id="9bec60b9" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Histograma de sobres promedio</span></span>
@@ -467,56 +505,74 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Promedio sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="29">
-<pre><code>np.float64(712.4)</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>np.float64(671.8731)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulacion_album_files/figure-html/cell-10-output-2.png" width="602" height="450" class="figure-img"></p>
+<p><img src="simulacion_album_files/figure-html/cell-10-output-2.png" width="609" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div id="72f56f44" class="cell" data-execution_count="10">
+<div id="6e171936" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>grafico2<span class="op">=</span>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].hist()</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>grafico2.set_title(<span class="st">"Grafico 2: Simulación Montecarlo de 2 personas (con intercambio)"</span>)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>grafico2.set_xlabel(<span class="st">"Costo promedio (Q)"</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>grafico2.set_ylabel(<span class="st">"Frecuencia"</span>)</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Histograma de costo promedio</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>grafico2<span class="op">=</span>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].hist()</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>grafico2.set_title(<span class="st">"Grafico 2: Simulación Montecarlo de 2 personas (con intercambio)"</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>grafico2.set_xlabel(<span class="st">"Costo promedio (Q)"</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>grafico2.set_ylabel(<span class="st">"Frecuencia"</span>)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>data_frame_simulaciones[<span class="st">"Costo sobres"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="30">
-<pre><code>np.float64(4808.7)</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>np.float64(4535.143425)</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="simulacion_album_files/figure-html/cell-11-output-2.png" width="602" height="450" class="figure-img"></p>
+<p><img src="simulacion_album_files/figure-html/cell-11-output-2.png" width="606" height="450" class="figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="comparación-de-escenarios-con-10000-simulaciones" class="level1">
+<h1><span style="color:blue"> Comparación de escenarios con 10,000 simulaciones </span></h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Ejercicio</th>
-<th>Estampas</th>
-<th>Costo</th>
+<th>Escenarios</th>
+<th>Número de sobres</th>
+<th>Costo promedio</th>
+<th>Número de Repetidas</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Solitario</td>
-<td>670</td>
-<td>6000</td>
+<td>Sin Intercambio</td>
+<td>949</td>
+<td>Q 6,404</td>
+<td>4,074</td>
+</tr>
+<tr class="even">
+<td>Con Intercambio</td>
+<td>673</td>
+<td>Q 4,542</td>
+<td>2,694</td>
+</tr>
+<tr class="odd">
+<td>Diferencia</td>
+<td>276</td>
+<td>Q 1,862</td>
+<td>1,380</td>
 </tr>
 </tbody>
 </table>
-</section>
 </section>
 
 </main>
